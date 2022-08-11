@@ -1,0 +1,2 @@
+appName,totalSourceBytes,totalDestinationBytes,totalDestinationPackets,totalSourcePackets,sourcePayloadAsBase64,destinationPayloadAsBase64,destinationPayloadAsUTF,direction,sourceTCPFlagsDescription,destinationTCPFlagsDescription,source,protocolName,sourcePort,destination,destinationPort,startDateTime,stopDateTime
+6,1539,2789,15,13,0,0,0,4,2,2,8066211179,2,51005,1921685122,22,20100612192526,20100612192531

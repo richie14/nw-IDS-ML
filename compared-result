@@ -1,0 +1,64 @@
+richie@richie:~/Documents$ python3 compare-model.py 
+(79915, 18) (53278, 18) (79915,) (53278,)
+/home/richie/.local/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:444: ConvergenceWarning: lbfgs failed to converge (status=2):
+ABNORMAL_TERMINATION_IN_LNSRCH.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+Linear Regression:
+57.504570300435496
+Linear Regression Prediction:
+/home/richie/.local/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names
+  warnings.warn(
+[0.64880819]
+
+RandomForest Regression:
+/home/richie/.local/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but RandomForestRegressor was fitted without feature names
+  warnings.warn(
+99.8469990064089
+RandomForest Regression Prediction:
+[0.98]
+
+Decision tree:
+99.99436915800143
+99.99436915800143
+RandomForest Regression Prediction:
+/home/richie/.local/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but DecisionTreeClassifier was fitted with feature names
+  warnings.warn(
+[1]
+
+Gradient Boosting:
+
+Naive Baise:
+78.98382071399077
+Naive Baise Prediction:
+/home/richie/.local/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning: X does not have valid feature names, but GaussianNB was fitted with feature names
+  warnings.warn(
+[1]
+
+K-Nearest Neighbour:
+/home/richie/.local/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but KNeighborsClassifier was fitted without feature names
+  warnings.warn(
+99.99624610533428
+K-Nearest Neighbour Prediction:
+[0]
+
+SVM:
+/home/richie/.local/lib/python3.8/site-packages/sklearn/base.py:443: UserWarning: X has feature names, but SVC was fitted without feature names
+  warnings.warn(
+98.4721648710537
+SVM Prediction:
+[0]
+Traceback (most recent call last):
+  File "compare-model.py", line 115, in <module>
+    val_lb = lb.transform(val)
+  File "/home/richie/.local/lib/python3.8/site-packages/sklearn/preprocessing/_label.py", line 351, in transform
+    raise ValueError("The object was not fitted with multilabel input.")
+ValueError: The object was not fitted with multilabel input.
+richie@richie:~/Documents$ 
+
+

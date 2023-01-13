@@ -1,2 +1,6 @@
 # nw-ids-msc
-MSc Dissertation project
+MSc Dissertation project 
+
+We propose an IDS model based on the ISCX 2012 labelled datasetcollected to simulate four types  of  attack-Brute  Force  SSH,  DDoS,  HTTP  DoS  and insider  attackon  the  network infrastructure of an automated vehicle.The system canclassify if the behaviour of the network is normal or under an attack. The ISCX dataset ispre-processed to filter null values and standardize them as per machine learning algorithms requirement. Once  this  data  is  filtered,  selected  features  relevant  to  the  performance  of  the model are selected. The supervised dataset is divided into training and testing set to apply to the  mode. Finding  the  right algorithmtoachieve  maximum resultsfrom  our  model  is  an important step. Once we find the right machine learning model,we canuse it to fit our testing data for the proposed IDS.
+
+The proposed IDS gives excelling resultsfor XGBoost algorithmusing ISCX dataset, however there is always room for improvement and upgrade.An intrusion detection system is a complex mechanism andan active system that need to be updated from time-to-time with information on latest attacks and how to detect them.The ideal dataset for intrusion detection system in automated vehicles is yet to exist, some due to privacy issue, others fail to reflect the real-world automated vehicular network. Hence, we look  forward  to  a  updating  our  dataset  to  simulate  real-world  network  traffic  of  an  VANET based environment.
